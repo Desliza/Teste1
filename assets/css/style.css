@@ -198,8 +198,18 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 250px;
+  max-height: 200px;
 }
+
+@media (max-width: 991px) {
+  #header .logo img {
+    max-height: 1920px;
+    
+  }
+  #header .bi .bi-list .mobile-nav-toggle{
+    margin-right: 50px;
+  }
+  }
 
 .header-inner-pages {
   background: rgba(5, 87, 158, 0.9) !important;
@@ -519,7 +529,6 @@ h6 {
 #hero p {
   width: 80%;
   animation-delay: 0.4s;
-
   color: #fff;
 }
 
@@ -577,6 +586,7 @@ h6 {
     height: 120vh;
     padding: 100px 0;
   }
+
 
   #hero h2 {
     font-size: 28px;
@@ -657,7 +667,7 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 50px;
+  border-radius: 1px;
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
@@ -787,12 +797,11 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 140px 0;
-  background: url("../img/") top center no-repeat;
   position: relative;
 }
 
 .about:before {
-  background: #f4f4f4;
+  background: #ffff;
   content: "";
   position: absolute;
   bottom: 0;

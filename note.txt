@@ -1,0 +1,14 @@
+cinza até no fim do banner
+
+aumentar o espaço entre as letras da secãowitlist
+na section about  mudar a cor de fuindo para branca,
+nas midwa wares definir uma popoção de img que não seja maior que para telemovel 
+Abrir o googledrive e pegar a foto de fundo para a galeria,
+
+trocar o fundo da galeria 
+subistituir a img 
+aumentar o espaçamento 
+
+os fala conosco da footerwitlist levam para o contacto, 
+o restante leva para o whatsapp
+adicionar uma modal para enviar mensagem por email quando o user 
