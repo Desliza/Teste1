@@ -109,9 +109,36 @@
   
             </div>
   
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $receiving_email_address = 'geral@skinnerbusiness.ao';
+            
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $subject = $_POST['subject'];
+                $message = $_POST['message'];
+            
+                // Se necessário, adicione validação dos campos do formulário aqui
+            
+                // Envie o e-mail
+                $to = $receiving_email_address;
+                $headers = "From: $email";
+            
+                $email_body = "Name: $name\n";
+                $email_body .= "Email: $email\n";
+                $email_body .= "Subject: $subject\n\n";
+                $email_body .= "Message:\n$message";
+            
+                mail($to, $subject, $email_body, $headers);
+            
+                echo "success";
+                exit; // Para interromper a execução do restante do código PHP
+            }
+              ?>
+
+
             <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-  
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form  method="post" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
@@ -128,7 +155,7 @@
                 </div>
                 <div class="my-3">
                   <div class="loading">A Carregar</div>
-                  <div class="error-message"></div>
+                  
                   <div class="sent-message">Sua Mensagem foi Enviada. Obrigado!</div>
                 </div>
                 <button class="btnloo" type="submit">Enviar Mensagem</button>
