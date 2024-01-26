@@ -31,6 +31,35 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    #myModal{
+      display: none;
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      height:100%;
+      z-index: 1;
+    }
+    #modalContent{
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #001E2D;
+      border-radius: 3px solid #ccc;
+      text-align: center;
+
+    }
+    #myModal button{
+      display: inline-block;
+      padding: 10px 20px;
+      margin:10px;
+      cursor:pointer;
+      border: 2px;
+    }
+  </style>
 
 </head>
 
@@ -50,7 +79,7 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo"><img src="assets/img/img/Logo/Logo Skinner Business-03.png" alt="logo-Skinnerbusiness" class="img-fluid"></a>
+        <a href="index.html" class="logo"><img src="assets/img/img/Logo/Logo Skinner Business pequena 2-03-03.png" alt="logo-Skinnerbusiness" class="img-fluid"></a>
       
         <nav id="navbar" class="navbar">
         <ul>
@@ -71,7 +100,7 @@
           <p style="text-align:left; font-size: 16px; margin-left: 8px;">Ajudamo-lo a poupar tempo,dinheiro e recursos, 
             ao fornecer o projecto certo a ser executado para as suas necessidades de Construção ou obras.
           <br><span style="font-size: 12px;"><b>Construção para vida</b></span></p>
-          <a href="contacto.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Fale Conosco</a>
+          <a href="https://wa.link/K0ielo" target="_blank" class="btn-get-started animate__animated animate__fadeInUp scrollto">Fale Conosco</a>
     
     </div>
     
@@ -127,7 +156,20 @@
     </div>
   </section><!-- End Icon Boxes Section -->
 
+      <!-- Modal  
+        <script>
+    window.onload = function(){
+      alert("Seja bem vindo");
+    };
+  </script> -->
 
+    <div id="myModal">
+      <div id="modalContent">
+        <p>Gostaria de Receber anuncios sobre promoções e nossos Serviços?</p>
+        <button onclick="window.location.href='contacto.html' ">Sim</button>
+        <button onclick="fecharModal()">Não</button>
+      </div>
+    </div>
 
 
    <!--======= Icon Boxes Section #f4f4f4 ======= 
@@ -207,8 +249,10 @@
 
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-lg-6 text-left">
-            <p style="font-size: 15px;">
-              Compreendemos que cada cliente é diferente e estamos aqui para o ajudar a encontrar a solução mais adequada para si.
+            <p style="font-size: 15px; letter-spacing: 1px; line-height: 2.5;">
+              Compreendemos que cada cliente é diferente e estamos aqui <br>
+              <span style="margin-top: 3px;">para o ajudar a encontrar a solução mais adequada para si.</span>
+              
             </p>
           </div>
           <div class="col-lg-6 text-center mt-4 mt-lg-0" >
@@ -221,12 +265,12 @@
     <!-- Projetos-->
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
-     <div class="container container1" data-aos="fade-up" style="background-color:#043442;">
+     <div class="container container1" data-aos="fade-up" style="background-color:#ffffff;">
        <div class="row">
          <div class="col-lg-6 pt-4 pt-lg-0">
-           <h4 style="color:#FFFF; margin-top: 50px; margin-left: 10px; ">Projectos</h4>
+           <h4 style="color:#9a9a9a; margin-top: 50px; margin-left: 10px; ">Projectos</h4>
            <br>
-           <p style="color:#ccc2cc; text-align: justify; margin-left: 10px; margin-right: 10px;">
+           <p style="color:#9a9a9a; text-align: justify; margin-left: 10px; margin-right: 10px;">
             Somos conhecidos pela nossa capacidade de gerenciar grandes projectos com uma equipa
             que tem experiência no mercado, que tem obtido resultados satisfatório a nível dos nossos
             projectos e obras. Estamos empenhados em fornecer o melhor serviço possível em todos
@@ -248,7 +292,7 @@
 
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-lg-12 text-center">
-            <p style="font-size: 15px;"><span><b> Como trabalhamos</b></span> <br><br>
+            <p style="font-size: 15px; line-height: 1.5;"><span><b> Como trabalhamos</b></span> <br><br>
               Para a execução de seus projectos a Skinner Business oferece um serviço completo em
               todas as fases da construção, incluindo o planeamento, a concepção, o desenvolvimento
               e a gestão de obras de construção.
@@ -271,12 +315,12 @@
          
           <div class="col-md-6 d-flex align-items-stretch" >
             <div class="icon-box">
-              <img src="assets/img/img/cropped-shot-dark-skinned-contractor-holding-touch-pad-entering-data-while-working-new-housing-project-sitting-desk-with-drawings-scale-model-house-blueprint-rolls-ruler-helmets.png" alt="aboutimg" style="width: 90%;">
+              <img src="assets/img/img/dfg.png" alt="aboutimg" style="width: 90%;">
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0"  >
             <div class="icon-box">
-              <img src="assets/img/img/AdobeStock_523134926_Preview.png" alt="aboutimg" style="width: 90%;">
+              <img src="assets/img/img/AdobeStock_655002991_Preview.png" alt="aboutimg" style="width: 90%; height: 379px; ">
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0"  >
@@ -286,7 +330,7 @@
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0"  >
             <div class="icon-box">
-              <img src="assets/img/img/AdobeStock_68632352_Preview.png" alt="aboutimg" style="width: 90%;">
+              <img src="assets/img/img/young-man-unform-analyzing-project-building.png" alt="aboutimg" style="width: 90%; ">
             </div>
           </div>
           </div>
@@ -301,16 +345,20 @@
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
       <div class="container-fluid" >
-        <div class="container">
-        <div class="row">
-          <div class="col-lg-12 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a>
+        <div class="container" >
+        <div class="row" >
+          <div  class="col-lg-12 align-items-stretch position-relative video-box"  data-aos="fade-right">
+            <video controls  style="width: 100%; height: 100%;"
+              src="assets/img/img/WhatsApp Video 2024-01-02 at 13.21.33_6b155381.mp4" type="video/mp4" >
+                 </video>
           </div>
 
         </div>
         </div>
       </div>
-    </section> <!--  End Why Us Section -->
+    </section> <!-- 
+      style='background-image: url("assets/img/img/WhatsApp\ Image\ 2024-01-02\ at\ 13.20.34_1c20ebe7.jpg");'
+      End Why Us Section -->
 
   </main><!-- End #main -->
 
@@ -322,7 +370,7 @@
 
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-lg-6 text-left">
-            <p style="font-size: 15px;">
+            <p style="font-size: 15px; line-height: 2.5;">
               A Skinner Business é uma empresa de construção que não trata apenas de construir
               grandes projectos, mas sim de construir relações com seus clientes e parceiros.
             </p>
@@ -369,7 +417,7 @@
 
        <div class="container">
         <div class="copyright">
-          &copy; 2024 Skinner Business - Todos direitos reservados| por   <strong><span>Desliza</span></strong>.
+          &copy; 2024 Skinner Business - Todos direitos reservados| por   <strong><span><a href="https://desliza.ao" target="_blank"></a>Desliza.ao</span></strong>.
         </div>
        </div>
 
@@ -379,6 +427,15 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+      window.onload = function(){
+        document.getElementById('myModal').style.display ='block';
+      }
+      function fecharModal() {
+        document.getElementById('myModal').style.display ='none';
+      }
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

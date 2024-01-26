@@ -198,12 +198,12 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 200px;
+  max-height: 50px;
 }
 
 @media (max-width: 991px) {
   #header .logo img {
-    max-height: 1920px;
+    max-height: 50px;
     
   }
   #header .bi .bi-list .mobile-nav-toggle{
@@ -587,6 +587,15 @@ h6 {
     padding: 100px 0;
   }
 
+  #hero {
+
+    overflow: hidden;
+    position: left;
+    background: url("../img/img/Logo/mobile_Prancheta\ 1.png") top center;
+    background-size: cover;
+    position: justify;
+
+  }
 
   #hero h2 {
     font-size: 28px;
@@ -725,7 +734,7 @@ section {
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
   padding-bottom: 30px;
 }
 
@@ -817,7 +826,7 @@ section {
 }
 .about .container1 {
   position: relative;
-  border: 2px  #f4f4f4 solid ;
+  border: 0px  #f4f4f4 solid ;
   background-color: #f4f4f4;
 }
 
@@ -1174,7 +1183,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services{
-  background: url("../img/img/AdobeStock_117356929_Preview.png") fixed center center;
+  background: url("../img/img/hjbhfgvhfgg.png") fixed center center;
   background-size: cover;
 }
 
